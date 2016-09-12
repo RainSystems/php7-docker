@@ -32,4 +32,5 @@ RUN a2enmod rewrite && \
     pecl install apcu && \
     gem install -n /usr/bin sass && \
     curl -sS https://getcomposer.org/installer | php && \
-    mv composer.phar /usr/local/bin/composer
+    mv composer.phar /usr/local/bin/composer && \
+    rm -rf /var/www/*
